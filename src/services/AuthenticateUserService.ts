@@ -33,7 +33,9 @@ class AuthenticateUserService {
     //GENERATE TOEKN
     const token = sign({
       email: user.email
-    }, "1976e579ea69e849cdf0cfca633cca9a", {
+    }, 
+    "1976e579ea69e849cdf0cfca633cca9a", 
+    {
       subject: user.id,
       expiresIn: "1d"
       
